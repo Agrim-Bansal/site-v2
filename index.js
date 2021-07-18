@@ -36,3 +36,14 @@ document.getElementById('nav_activator').onclick= ()=>{
     document.getElementsByClassName('span')[1].classList.toggle('line-2')
     document.getElementsByClassName('span')[2].classList.toggle('line-3')
 }
+
+
+for (let i=0; i<document.getElementsByTagName('a').length; i++){
+    document.getElementsByTagName('a')[i].addEventListener('click', ()=>{
+        for(j=0; j<document.getElementsByClassName('span').length; j++){
+            document.getElementsByClassName('span')[j].classList.toggle('dark-arrow')
+        }
+
+        document.getElementById('navbar').classList.toggle('dark-navbar')
+    })
+}
