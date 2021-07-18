@@ -30,7 +30,7 @@ section{
     text-align:center;
     background: #010101;
     height:100%;
-    cursor: url('public/down-arrow.png');
+    cursor: url('src/down-arrow.png');
 }
 
 h1{
