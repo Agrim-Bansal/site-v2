@@ -1,7 +1,9 @@
 /*General Styling */
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
     font-family:  'Open sans', Verdana, Georgia, 'Times New Roman', Times, serif;
     margin:0;
@@ -18,8 +20,12 @@ section{
     position: relative; 
 }
 
+a{
+    text-decoration: none;
+}
 
 /*Style for the first section*/
+
 #header{
     height:100%;
     width:100%;
@@ -28,7 +34,7 @@ section{
     justify-content: center;
     align-content: center;
     text-align:center;
-    background: #010101;
+    background: #161515;
     height:100%;
     cursor: url('src/down-arrow.png');
 }
@@ -153,22 +159,90 @@ nav{
     height:50vmin;
     width:50vmin;
     border-radius: 2%;
+    margin: 0 5%;
 }
 
 .about_me_div{
-    float:left;
-    width:90%;
+    text-align: left;
+    width:75%;
     border-radius: 1em;
     margin: auto;
     padding: 2%;
-    font-family: 'Open Sans';
-    font-size: 1.5em;
+    font-family: 'pangolin';
+    font-size: 1.75em;
     text-align: left;
-    background-color: #fff;
 }   
+
+
+#projects_container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    
+}
+
+.project_tile{
+    flex-shrink: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0%;
+    margin: 2% 5% 2% 5%;
+    border-radius: 2.5vmin 2.5vmin 2.5vmin 2.5vmin;
+    width: 20vw;
+    height: 60vh;
+    cursor:hand;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1), -2px -2px 10px rgba(0,0,0,0.1);
+    transition:2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-family: 'Pangolin';
+}
+
+.project_tile:hover{
+    transform: scale(110%);
+}
+
+.project_thumbnail{
+    width:100%;
+    height: 40%;
+    border-radius: 2.5vmin 2.5vmin 0 0;
+    margin-bottom: 10%;
+}
+
+.project_info{
+    font-weight: 600;
+    font-size: 1.2em;
+    height:50%;
+}
+
+.redirect{
+    height:32px;
+    transform: translateY(-100%);
+}
+
+@media (hover: none){
+    #project_tile:hover{
+        transform: none;
+    }
+}
+
+@media (max-width:1000px) {
+    nav{
+        width:fit-content;
+    }
+    .about_me_div{
+        font-size: 1.3em;   
+    }
+
+    .project_tile{
+        width:40vw;
+    }
+}
+
 
 @media (max-width:512px) {
     nav{
-        width:100vw
+        width:100vw;
+    }
+    .project_tile{
+        width:80vw;
     }
 }

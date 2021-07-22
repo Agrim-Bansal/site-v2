@@ -13,17 +13,14 @@
     
     <body id="body" >
     
-    <section>
-        <div id ="header" >    
-            <h1 id="name" class="c1"> Agrim Bansal </h1>
-            
-            <div id="I_am_anim_holder">
-                <h3 class="I_am_anim">I am&ThinSpace;</h1>
-                <h3 id="me" class="I_am_anim"></h2>
-                <h3 id="caret" class="I_am_anim">&ThinSpace;|</h1>
-            </div>  
-
-        </div>
+    <section id ="header" >
+        <h1 id="name" class="c1"> Agrim Bansal </h1>
+        
+        <div id="I_am_anim_holder">
+            <h3 class="I_am_anim">I am&ThinSpace;</h1>
+            <h3 id="me" class="I_am_anim"></h2>
+            <h3 id="caret" class="I_am_anim">&ThinSpace;|</h1>
+        </div>  
 
         <a href="#About_Me" class="arrow down"><img src="src/down-arrow.png"></a>
 
@@ -45,21 +42,50 @@
     </div>
 
     
-    <section>
-        <div id="About_Me">
+    <section id="About_Me">
             <h1>About Me</h1>
             
             <div class="about_me_div">
                 <img id="my_pic" src="src/my_photo.jpg" alt="My Picture">
-                I am an Indian High School student passionate about building cool stuff. 
-                I love Mathematics and taking on challenges. 
-                I want to be a Software Engineer.
+                I am sophomore in an Indian High School who loves to about building cool stuff and taking on tough chalanges. 
+                I love logics, mathematics and redefining my limits. 
+                Professionally I want to be a Software Engineer and wish to make the world a better place for everyone.
             </div>
 
             <a href="#header" class="arrow up"><img src="src/down-arrow.png"></a>
-            <a href="#navbar" class="arrow down"><img src="src/down-arrow.png"></a>
-            
+            <a href="#Projects" class="arrow down"><img src="src/down-arrow.png"></a>            
+    </section>
+
+    <section id="Projects">
+        <h1>My Projects</h1>
+        
+        <div id="projects_container">
+
+            <div class="project_tile" onclick="window.open('https://agrim-bansal-dictionary.herokuapp.com')">
+                <img src="src/dictionary-app-preview.jpg" class="project_thumbnail"/>
+                <div class="project_info">A Dictionary WebApp to find the meaning of words. Built with NodeJS and vanilla JS for frontend</div>
+                <a href="https://github.com/Agrim-Bansal/dictionary" target="_blank" class="redirect"> <img class="github-repo redirect" src="src/github-logo.png"> </a>
+            </div>
+
+            <div class="project_tile" onclick="window.open('https://github.com/Agrim-Bansal/zoom-teams-mic-button')">
+                <img src="src/zoom-mute-button.jpg" class="project_thumbnail"/>
+                <div class="project_info">A physical button for controlling the zoom mic. Built with Raspberrypi Pico and coded with CircuitPython</div>
+                <a href="https://github.com/Agrim-Bansal/zoom-teams-mic-button" target="_blank" class="redirect"> <img class="github-repo redirect" src="src/github-logo.png"> </a>
+            </div>
+
+            <div class="project_tile" onclick="window.open('https://projects.agrimbansal.com/class-schedule')">
+                <img src="src/class-schedule-preview.jpg" class="project_thumbnail"/>
+                <div class="project_info">A website and chrome-extension to keep record of my online classes built with ExpressJS and Airtable database</div>
+                <a href="https://github.com/Agrim-Bansal/class-schedule" target="_blank" class="redirect"> <img class="github-repo redirect" src="src/github-logo.png"> </a>
+            </div>
+
+            <!-- Add More Projects HERE -->
+
+
         </div>
+
+        <a href="#About_Me" class="arrow up"><img src="src/down-arrow.png"></a>
+        <a href="#navbar" class="arrow down"><img src="src/down-arrow.png"></a>            
     </section>
 
         
