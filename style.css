@@ -177,8 +177,8 @@ nav{
 #projects_container{
     display: flex;
     width: 100%;
-    overflow: hidden;
-    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: 0px;
     
 }
 
