@@ -219,7 +219,7 @@ nav{
 }
 
 @media (hover: none){
-    #project_tile:hover{
+    .project_tile:hover{
         transform: none;
     }
 }
