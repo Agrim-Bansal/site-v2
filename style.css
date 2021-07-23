@@ -176,11 +176,13 @@ nav{
 
 #projects_container{
     display: flex;
-    width: 100%;
+    width: 100%;    
     overflow-y: hidden;
-    scrollbar-width: 0px;
-    
 }
+
+::-webkit-scrollbar
+{ width: 0px; }
+
 
 .project_tile{
     flex-shrink: 0;
@@ -231,7 +233,10 @@ nav{
     .about_me_div{
         font-size: 1.3em;   
     }
-
+    #my_pic{
+        width:35vmin;
+        height:35vmin;
+    }
     .project_tile{
         width:40vw;
     }
