@@ -51,3 +51,8 @@ rem_dark = ()=>{
     }
     document.getElementById('navbar').classList.remove('dark-navbar')
 }
+
+rem_navbar= ()=>{
+    document.getElementById('nav_activator').click()
+}
+
