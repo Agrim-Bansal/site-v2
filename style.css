@@ -22,11 +22,12 @@ section{
 
 a{
     text-decoration: none;
+    color:unset;
 }
 
 /*Style for the first section*/
 
-#header{
+#Header{
     height:100%;
     width:100%;
     display: flex;
@@ -60,13 +61,13 @@ h3{
 
 #I_am_anim_holder{
     color:#eb9534;
-    display:flex;
     justify-content:center;
 }
 
 .I_am_anim{
     margin:0;
     text-align: left;    
+    display: inline;
 }
 
 .arrow{
@@ -227,6 +228,9 @@ nav{
 }
 
 @media (max-width:1000px) {
+    h3{
+        font-size: 1.8em;
+    }
     nav{
         width:fit-content;
     }
@@ -249,5 +253,11 @@ nav{
     }
     .project_tile{
         width:80vw;
+    }
+}
+
+@media (max-width:350px){
+    h3{
+        font: size 1.6em;
     }
 }

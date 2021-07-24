@@ -28,7 +28,7 @@ anim = (text) =>{
     }
     window.i += 1; 
 }
-setInterval(anim, 100, s=text);
+setInterval(anim, 110, s=text);
 
 document.getElementById('nav_activator').onclick= ()=>{
     navbar.classList.toggle('active-navbar');
@@ -38,12 +38,16 @@ document.getElementById('nav_activator').onclick= ()=>{
 }
 
 
-for (let i=0; i<document.getElementsByTagName('a').length; i++){
-    document.getElementsByTagName('a')[i].addEventListener('click', ()=>{
-        for(j=0; j<document.getElementsByClassName('span').length; j++){
-            document.getElementsByClassName('span')[j].classList.toggle('dark-arrow')
-        }
+add_dark = ()=>{
+    for(j=0; j<document.getElementsByClassName('span').length; j++){
+        document.getElementsByClassName('span')[j].classList.add('dark-arrow')
+    }
 
-        document.getElementById('navbar').classList.toggle('dark-navbar')
-    })
+    document.getElementById('navbar').classList.add('dark-navbar')
+}
+rem_dark = ()=>{
+    for(j=0; j<document.getElementsByClassName('span').length; j++){
+        document.getElementsByClassName('span')[j].classList.remove('dark-arrow')
+    }
+    document.getElementById('navbar').classList.remove('dark-navbar')
 }

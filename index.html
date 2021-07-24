@@ -10,37 +10,35 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     
-    
     <body id="body" >
-    
-    <section id ="header" >
-        <h1 id="name" class="c1"> Agrim Bansal </h1>
-        
-        <div id="I_am_anim_holder">
-            <h3 class="I_am_anim">I am&ThinSpace;</h1>
-            <h3 id="me" class="I_am_anim"></h2>
-            <h3 id="caret" class="I_am_anim">&ThinSpace;|</h1>
-        </div>  
-
-        <a href="#About_Me" class="arrow down"><img src="src/down-arrow.png"></a>
-
-    </section>
-    
 
     <nav id="navbar" class='.navbar'>
-        <a  href="#header" class="nav_content"> Home </a>
-        <a  href="#About_Me" class="nav_content"> Me </a>
-        <a  href="#" class="nav_content"> Projects </a> 
+        <a  href="#Header" class="nav_content" onclick="rem_dark()"> Home </a>
+        <a  href="#About_Me" class="nav_content" onclick="add_dark()"> Me </a>
+        <a  href="#Projects" class="nav_content" onclick="add_dark()"> Projects </a> 
         <a  href="#" class="nav_content"> Competitions </a>
         <a  href="#" class="nav_content">Contact Me </a>
     </nav>
-    
+
     <div id="nav_activator">
         <div class="span"></div>
         <div class="span"></div>
         <div class="span"></div>
     </div>
+    
+    <section id ="Header" >
+        <h1 id="name" class="c1"> Agrim Bansal </h1>
+        
+        <div id="I_am_anim_holder">
+            <h3 class="I_am_anim">I am&ThinSpace;</h1>
+            <h3 id="me" class="I_am_anim"></h2>
+            <h3 id="caret" class="I_am_anim">|</h1>
+        </div>  
 
+        <a href="#About_Me" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>
+
+    </section>
+    
     
     <section id="About_Me">
             <h1>About Me</h1>
@@ -52,8 +50,8 @@
                 Professionally I want to be a Software Engineer and wish to make the world a better place for everyone.
             </div>
 
-            <a href="#header" class="arrow up"><img src="src/down-arrow.png"></a>
-            <a href="#Projects" class="arrow down"><img src="src/down-arrow.png"></a>            
+            <a href="#Header" class="arrow up" onclick="rem_dark()"><img src="src/down-arrow.png"></a>
+            <a href="#Projects" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>            
     </section>
 
     <section id="Projects">
@@ -61,33 +59,40 @@
         
         <div id="projects_container">
 
-            <div class="project_tile" onclick="window.open('https://agrim-bansal-dictionary.herokuapp.com')">
-                <img src="src/dictionary-app-preview.jpg" class="project_thumbnail"/>
-                <div class="project_info">A Dictionary WebApp to find the meaning of words. Built with NodeJS and vanilla JS for frontend</div>
+            <div class="project_tile">
+                <div onclick="window.open('https://agrim-bansal-dictionary.herokuapp.com')">
+                    <img src="src/dictionary-app-preview.jpg" class="project_thumbnail" />
+                    <div class="project_info">A Dictionary WebApp to find the meaning of words. Built with NodeJS and vanilla JS for frontend</div>
+                </div>
                 <a href="https://github.com/Agrim-Bansal/dictionary" target="_blank" class="redirect"> <img class="github-repo redirect" src="src/github-logo.png"> </a>
             </div>
 
-            <div class="project_tile" onclick="window.open('https://github.com/Agrim-Bansal/zoom-teams-mic-button')">
-                <img src="src/zoom-mute-button.jpg" class="project_thumbnail"/>
-                <div class="project_info">A physical button for controlling the zoom mic. Built with Raspberrypi Pico and coded with CircuitPython</div>
+            <div class="project_tile">
+                <div onclick="window.open('https://github.com/Agrim-Bansal/zoom-teams-mic-button')">
+                    <img src="src/zoom-mute-button.jpg" class="project_thumbnail"/>
+                    <div class="project_info">A physical button for controlling the zoom mic. Built with Raspberrypi Pico and coded with CircuitPython</div>
+                </div>
                 <a href="https://github.com/Agrim-Bansal/zoom-teams-mic-button" target="_blank" class="redirect"> <img class="github-repo redirect" src="src/github-logo.png"> </a>
             </div>
 
-            <div class="project_tile" onclick="window.open('https://projects.agrimbansal.com/class-schedule')">
+            <div class="project_tile">
+                <div onclick="window.open('https://projects.agrimbansal.com/class-schedule')">
                 <img src="src/class-schedule-preview.jpg" class="project_thumbnail"/>
                 <div class="project_info">A website and chrome-extension to keep record of my online classes built with ExpressJS and Airtable database</div>
+                </div>
                 <a href="https://github.com/Agrim-Bansal/class-schedule" target="_blank" class="redirect"> <img class="github-repo redirect" src="src/github-logo.png"> </a>
             </div>
 
             <!-- Add More Projects HERE -->
 
-
         </div>
 
-        <a href="#About_Me" class="arrow up"><img src="src/down-arrow.png"></a>
+        <a href="#About_Me" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
         <a href="#navbar" class="arrow down"><img src="src/down-arrow.png"></a>            
     </section>
 
+    <section>
+    </section>
         
     <script src="index.js"></script>
 
