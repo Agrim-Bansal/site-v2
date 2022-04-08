@@ -55,4 +55,3 @@ rem_dark = ()=>{
 rem_navbar= ()=>{
     document.getElementById('nav_activator').click()
 }
-

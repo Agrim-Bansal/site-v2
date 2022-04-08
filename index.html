@@ -17,7 +17,7 @@
         <a  href="#About_Me" class="nav_content" onclick="add_dark(); rem_navbar()"> Me </a>
         <a  href="#Projects" class="nav_content" onclick="add_dark(); rem_navbar()"> Projects </a> 
         <a  href="#" class="nav_content"> Competitions </a>
-        <a  href="#" class="nav_content">Contact Me </a>
+        <a  href="#Contact" class="nav_content" onclick="rem_dark(); rem_navbar()">Contact Me </a>
     </nav>
 
     <div id="nav_activator">
@@ -27,6 +27,7 @@
     </div>
     
     <section id ="Header" >
+
         <h1 id="name" class="c1"> Agrim Bansal </h1>
         
         <div id="I_am_anim_holder">
@@ -36,7 +37,6 @@
         </div>  
 
         <a href="#About_Me" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>
-
     </section>
     
     
@@ -60,7 +60,7 @@
         <div id="projects_container">
 
             <div class="project_tile">
-                <div onclick="window.open('https://agrim-bansal-dictionary.herokuapp.com')">
+                <div onclick="window.open('https:\/\/agrim-bansal-dictionary.herokuapp.com')">
                     <img src="src/dictionary-app-preview.jpg" class="project_thumbnail" />
                     <div class="project_info">A Dictionary WebApp to find the meaning of words. Built with NodeJS and vanilla JS for frontend</div>
                 </div>
@@ -68,7 +68,7 @@
             </div>
 
             <div class="project_tile">
-                <div onclick="window.open('https://github.com/Agrim-Bansal/zoom-teams-mic-button')">
+                <div onclick="window.open('https:\/\/github.com/Agrim-Bansal/zoom-teams-mic-button')">
                     <img src="src/zoom-mute-button.jpg" class="project_thumbnail"/>
                     <div class="project_info">A physical button for controlling the zoom mic. Built with Raspberrypi Pico and coded with CircuitPython</div>
                 </div>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="project_tile">
-                <div onclick="window.open('https://projects.agrimbansal.com/class-schedule')">
+                <div onclick="window.open('https:\/\/projects.agrimbansal.com/class-schedule')">
                 <img src="src/class-schedule-preview.jpg" class="project_thumbnail"/>
                 <div class="project_info">A website and chrome-extension to keep record of my online classes built with ExpressJS and Airtable database</div>
                 </div>
@@ -88,17 +88,37 @@
         </div>
 
         <a href="#About_Me" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
-        <a href="#navbar" class="arrow down"><img src="src/down-arrow.png"></a>            
+        <a href="#Contact" class="arrow down" onclick="rem_dark()"><img src="src/down-arrow.png"></a>            
     </section>
 
-    <section>
+    <section id="Contact">
+        <div id="contact_me_text">Contact Me</div>
+        
+        <div class="social-container icon-1-container">
+            <div class="socials">
+                <a href="https://github.com/Agrim-Bansal" target="_blank"><img src="src/github-logo.png" class="social-icons icon-1"/></a>
+            </div>
+        </div>
+
+        <div class="social-container icon-2-container">
+            <div class="socials">
+                <a title="Mail me at dev@agrimbansal.com" href="mailto:dev@agrimbansal.com" target="_blank"><img src="src/mail-icon.png" class="social-icons icon-2"/></a>
+            </div>
+        </div>
+
+        <div class="social-container icon-3-container">
+            <div class="socials">
+                <a href="https://twitter.com/AgrimBansal6" target="_blank"><img src="src/twitter-logo.png" class="social-icons icon-3"/></a>
+            </div>
+        </div>
+
+        <a href="#Projects" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
+        <a href="#Contact" class="arrow down" onclick="rem_dark()"><img src="src/down-arrow.png"></a>            
     </section>
+
+
+    <section></section>
         
     <script src="index.js"></script>
-
-
 </body>
-
-
-
 </html>
