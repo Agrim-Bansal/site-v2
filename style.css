@@ -333,12 +333,15 @@ h3{
     animation-iteration-count: infinite;
 }
 .icon-1{
+    transform: rotate(0deg);
     animation: revolve-acw-1 10s cubic-bezier(0,0,1,1) 0s infinite;
 }
 .icon-2{
+    transform: rotate(240deg);
     animation: revolve-acw-2 10s cubic-bezier(0,0,1,1) 0s infinite;
 }
 .icon-3{
+    transform: rotate(120deg);
     animation: revolve-acw-3 10s cubic-bezier(0,0,1,1) 0s infinite;
 }
 
