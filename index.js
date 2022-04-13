@@ -37,6 +37,14 @@ document.getElementById('nav_activator').onclick= ()=>{
     document.getElementsByClassName('span')[2].classList.toggle('line-3')
 }
 
+document.addEventListener('keydown', (e)=>{
+    if (e.key === 'Escape'){
+        navbar.classList.remove('active-navbar');
+        document.getElementsByClassName('span')[0].classList.remove('line-1')
+        document.getElementsByClassName('span')[1].classList.remove('line-2')
+        document.getElementsByClassName('span')[2].classList.remove('line-3')
+    }
+})
 
 add_dark = ()=>{
     for(j=0; j<document.getElementsByClassName('span').length; j++){

@@ -32,7 +32,7 @@ a{
 }
 .dark-navbar{
     background-color:rgb(53, 53, 187);
-    color: rgba(205, 201, 235, 0.884);
+    color: rgba(246, 246, 248, 0.884);
 }
 
 .dark-arrow{
@@ -65,6 +65,7 @@ nav{
     font-size: 1.65em;
     margin:1%;
     border-style: solid;
+    border-color: #010101   ;
     border-width: 0px 0px 0.1px 0px;    
     text-decoration-line: none;
     font-weight: 600;
@@ -381,14 +382,26 @@ h3{
     .project_tile{
         width:80vw;
     }
-    #contact_me_text{
-        font-size: 7vmin;
-        height:35vmin;
-    }
 }
 
-@media (max-width:350px){
+@media (max-width:400px){
+    h1{
+        font-size: 3em;
+    }
     h3{
         font: size 1.6em;
+    }
+    #contact_me_text{
+        height:40vmin;
+        width:40vmin;
+        line-height: 40vmin;
+    }
+    .social-icons{
+        height:20vmin;
+    }
+    .social-container{
+        height: 85vmin;
+        left: calc(50vw - 20vmin/2);
+        top: calc(50vh - 85vmin/2);
     }
 }
