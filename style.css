@@ -236,7 +236,7 @@ h3{
     left:50%;
     transform: translateX(-50%) translateY(-50%);
     font-family: 'pangolin';
-    font-size: 2.3em;
+    font-size: 7vmin;
     background-color: #ff4800;
     font-weight: 250;
     text-align: center;
@@ -295,11 +295,11 @@ h3{
     }  
 }
 .social-container{
-    height:75vh;
+    height:75vmin;
     width:fit-content;
     position: absolute;
-    left: calc(50vw - 12.5vh/2);
-    top: 12.5vh;
+    left: calc(50vw - 12.5vmin/2);
+    top: calc(100vh/2 - 75vmin/2);
 }
 .icon-1-container{
     animation: revolve-1 10s cubic-bezier(0,0,1,1) 0s infinite;
@@ -374,12 +374,16 @@ h3{
 }
 
 
-@media (max-width:512px) {
+@media (max-width:520px) {
     nav{
         width:100vw;
     }
     .project_tile{
         width:80vw;
+    }
+    #contact_me_text{
+        font-size: 7vmin;
+        height:35vmin;
     }
 }
 
