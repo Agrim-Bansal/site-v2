@@ -303,12 +303,16 @@ h3{
 }
 .icon-1-container{
     animation: revolve-1 10s cubic-bezier(0,0,1,1) 0s infinite;
+    transform: rotate(0deg);
 }
 .icon-2-container{
     animation: revolve-2 10s cubic-bezier(0,0,1,1) 0s infinite;
+    transform: rotate(120deg);
 }
 .icon-3-container{
     animation: revolve-3 10s cubic-bezier(0,0,1,1) 0s infinite;
+    transform: rotate(240deg);
+
 }
 
 .social-icons:hover .social-container, .social-icon:hover{
