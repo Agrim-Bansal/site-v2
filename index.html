@@ -14,9 +14,9 @@
 
     <nav id="navbar" class='.navbar'>
         <a  href="#Header" class="nav_content" onclick="rem_dark(); rem_navbar()"> Home </a>
-        <a  href="#About_Me" class="nav_content" onclick="add_dark(); rem_navbar()"> Me </a>
-        <a  href="#Projects" class="nav_content" onclick="add_dark(); rem_navbar()"> Projects </a> 
-        <a  href="#Contact" class="nav_content" onclick="rem_dark(); rem_navbar()">Contact Me </a>
+        <a  href="#about-anchor" class="nav_content" onclick="add_dark(); rem_navbar()"> About Me </a>
+        <a  href="#projects-anchor" class="nav_content" onclick="add_dark(); rem_navbar()"> Projects </a> 
+        <a  href="#contact-anchor" class="nav_content" onclick="rem_dark(); rem_navbar()">Contact</a>
     </nav>
 
     <div id="nav_activator">
@@ -35,25 +35,28 @@
             <h3 id="caret" class="I_am_anim">|</h1>
         </div>  
 
-        <a href="#About_Me" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>
+        <a href="#about-anchor" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>
     </section>
     
     
     <section id="About_Me">
+            <div id="about-anchor" class="anchor"></div>
             <h1>About Me</h1>
             
             <div class="about_me_div">
                 <img id="my_pic" src="src/my_photo.jpg" alt="My Picture">
-                I am a freshman at the India Institute of Technology Delhi in the Computer Science who loves building cool stuff and taking on tough challenges. 
-                I love logics, Mathematics and Physics. 
-                Professionally I want to be a Software Developer and wish to make the world a better place for everyone.
+                I am a sophomore at the India Institute of Technology Delhi pursuing an undergraduate program in computer science and engineering. I like building things- both techy and not. 
+                I like taking on challenges and solving intriguing problems. I have a wide variety of interests ranging from reading fiction (sci-fi, thriller and mystery) to making websites, apps, iot devices and ML models and to playing badminton and football.
+                These also include origami, gaming, mythology, homelabbing and the best of all- trying out new things.
             </div>
 
             <a href="#Header" class="arrow up" onclick="rem_dark()"><img src="src/down-arrow.png"></a>
-            <a href="#Projects" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>            
+            <a href="#projects-anchor" class="arrow down" onclick="add_dark()"><img src="src/down-arrow.png"></a>            
     </section>
 
     <section id="Projects">
+        <div id="projects-anchor" class="anchor"></div>
+
         <h1>My Projects</h1>
         
         <div id="projects_container">
@@ -86,33 +89,45 @@
 
         </div>
 
-        <a href="#About_Me" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
-        <a href="#Contact" class="arrow down" onclick="rem_dark()"><img src="src/down-arrow.png"></a>            
+        <a href="#about-anchor" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
+        <a href="#contact-anchor" class="arrow down" onclick="rem_dark()"><img src="src/down-arrow.png"></a>            
     </section>
 
     <section id="Contact">
-        <div id="contact_me_text">Contact Me</div>
+        <div id="contact-anchor" class="anchor"></div>
+        <h1>Contact Me</h1>
+
+        <div id="contact_links">
+            <div id="contact_me_text">Find Me At</div>
+            
+            <div class="social-container icon-1-container">
+                <div class="socials">
+                    <a href="https://github.com/Agrim-Bansal" target="_blank"><img src="src/github-logo.png" class="social-icons icon-1"/></a>
+                </div>
+            </div>
+    
+            <div class="social-container icon-2-container">
+                <div class="socials">
+                    <a title="Mail me at dev@agrimbansal.com" href="mailto:dev@agrimbansal.com" target="_blank"><img src="src/mail-icon.png" class="social-icons icon-2"/></a>
+                </div>
+            </div>
+        </div>
         
-        <div class="social-container icon-1-container">
-            <div class="socials">
-                <a href="https://github.com/Agrim-Bansal" target="_blank"><img src="src/github-logo.png" class="social-icons icon-1"/></a>
-            </div>
+        <div class="contact_me_div">
+            I am always open to connecting with people and talking. 
+            I love discussing about any and everything- new ideas, books, movies, interesting technologies, philosophy or just pure random shower thoughts.
+        </div>
+        
+        <div class="contact_me_div">
+            Unfortunately, I am not on social media like Instagram, Snapchat or Reddit but I can be easily reached via <a class="contact-embedded-link" href="mailto:dev@agrimbansal.com">Email</a> which I check regularly. 
+            Don't hesitate and just send me a simple "Hi". I'm also on <a href="https://github.com/Agrim-Bansal" class="contact-embedded-link" target="_blank">Github</a> where I put up pretty much all of my projects. 
         </div>
 
-        <div class="social-container icon-2-container">
-            <div class="socials">
-                <a title="Mail me at dev@agrimbansal.com" href="mailto:dev@agrimbansal.com" target="_blank"><img src="src/mail-icon.png" class="social-icons icon-2"/></a>
-            </div>
-        </div>
+        <a href="#projects-anchor" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
 
-        <div class="social-container icon-3-container">
-            <div class="socials">
-                <a href="https://twitter.com/AgrimBansal6" target="_blank"><img src="src/twitter-logo.png" class="social-icons icon-3"/></a>
-            </div>
-        </div>
 
-        <a href="#Projects" class="arrow up" onclick="add_dark()"><img src="src/down-arrow.png"></a>
-    </section>
+
+</section>
 
 
     <section></section>

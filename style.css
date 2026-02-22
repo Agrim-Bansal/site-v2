@@ -31,7 +31,7 @@ a{
     visibility: hidden !important;
 }
 .dark-navbar{
-    background-color:rgb(53, 53, 187);
+    background-color:#B80D3D;
     color: rgba(246, 246, 248, 0.884);
 }
 
@@ -45,14 +45,16 @@ nav{
     left:0;
     top:0;
     flex-direction:column;
-    background-color: rgb(100, 97, 255);
-    width:20vw;
+    background-color: #eb9534;
+    width:25vw;
     height:100%;
     z-index: 2;
     padding-top: 5em;
     transform: translateX(-100%);
     transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
     color:rgb(0, 0, 0);
+    /* box-shadow: 10px 10px #000, */
+    box-shadow: rgba(0, 0, 0, 0.70) 1.95px 1.95px 10px;
 
 }
 
@@ -74,14 +76,15 @@ nav{
 
 #nav_activator{
     position: fixed;
-    top:10;
-    left:0;
-    width: 10vh;
+    top:25;
+    left:25;
+    width: 7.5vh;
+    height: 7.5vh;
     z-index:3;
 }
 
 .span{
-    height: 0.4vh;
+    height: 0.25vh;
     margin:15%;
     background-color: #eee;
     border-radius: 0.1vh;
@@ -89,15 +92,20 @@ nav{
 }
 
 .line-1{
-    transform: rotate(45deg) translateY(2.5vh);
+    transform: rotate(45deg) translateY(1.875vh);
 }
 .line-2{
     transform: scale(0);
 }
 .line-3{
-    transform: rotate(-45deg) translateY(-2.5vh);
+    transform: rotate(-45deg) translateY(-1.875vh);
 }
 
+.anchor{
+    height: 10px;
+    width: 10px;
+    visibility: hidden;
+}
 
 /*Style for the first section*/
 
@@ -116,11 +124,12 @@ nav{
 
 h1{
     font-family: Pangolin;
-    color: #637cc7;
+    color: #1B998B;
+    /* color: #637cc7; */
     text-align: center;
     font-size: 4em;
     margin: 1%;
-    margin-top: 0;
+    margin-top:2%;
     margin-left:auto;
     margin-right: auto;
     width:50%;
@@ -231,20 +240,46 @@ h3{
     background: #161515;
 }
 
+.contact_me_div{
+    text-align: left;
+    width:75%;
+    border-radius: 1em;
+    margin: auto;
+    padding: 2%;
+    font-family: 'pangolin';
+    font-size: 1.75em;
+    text-align: left;
+    color: white;
+}
+
 #contact_me_text{
     position: absolute;
     top:50%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
     font-family: 'pangolin';
-    font-size: 7vmin;
-    background-color: #ff4800;
+    font-size: 3vmin;
+    background-color: #eb9534;
     font-weight: 250;
     text-align: center;
-    line-height: 35vmin;
-    height:35vmin;
-    width:35vmin;
+    line-height: 20vmin;
+    height:20vmin;
+    width:20vmin;
     border-radius: 20vmin;
+}
+
+#contact_links{
+    position: relative;
+    float:right;
+    height:50vmin;
+    width:50vmin;
+    border-radius: 10%;
+    margin: 0 5%;
+}
+
+.contact-embedded-link{
+    color: #eb9534;
+    font-weight: 600;
 }
 
 @keyframes revolve-1{
@@ -257,20 +292,13 @@ h3{
 }
 @keyframes revolve-2{
     0%{
-        transform: rotate(120deg);
+        transform: rotate(180deg);
     }
     100%{
-        transform: rotate(480deg);
+        transform: rotate(540deg);
     }  
 }
-@keyframes revolve-3{
-    0%{
-        transform: rotate(240deg);
-    }
-    100%{
-        transform: rotate(600deg);
-    }  
-}
+
 @keyframes revolve-acw-1 {
     0%{
         transform: rotate(0deg);
@@ -281,26 +309,19 @@ h3{
 }
 @keyframes revolve-acw-2 {
     0%{
-        transform: rotate(-120deg);
+        transform: rotate(-180deg);
     }
     100%{
-        transform: rotate(-480deg);
+        transform: rotate(-540deg);
     }  
 }
-@keyframes revolve-acw-3 {
-    0%{
-        transform: rotate(-240deg);
-    }
-    100%{
-        transform: rotate(-600deg);
-    }  
-}
+
 .social-container{
-    height:75vmin;
+    height:50vmin;
     width:fit-content;
     position: absolute;
-    left: calc(50vw - 12.5vmin/2);
-    top: calc(100vh/2 - 75vmin/2);
+    left: calc(25vmin - 7.5vmin/2);
+    /* top: calc(100vh/2 - 75vmin/2); */
 }
 .icon-1-container{
     animation: revolve-1 10s cubic-bezier(0,0,1,1) 0s infinite;
@@ -308,15 +329,10 @@ h3{
 }
 .icon-2-container{
     animation: revolve-2 10s cubic-bezier(0,0,1,1) 0s infinite;
-    transform: rotate(120deg);
-}
-.icon-3-container{
-    animation: revolve-3 10s cubic-bezier(0,0,1,1) 0s infinite;
-    transform: rotate(240deg);
-
+    transform: rotate(180deg);
 }
 
-.social-icons:hover .social-container, .social-icon:hover{
+.social-icons:hover .social-container:hover, .social-icon:hover{
     animation-play-state: paused;
 }
 .socials{
@@ -326,7 +342,7 @@ h3{
 }
 
 .social-icons{
-    height:12.5vmin;
+    height:7.5vmin;
     border-radius: 100%;
     animation:revolve-acw;
     animation-duration: 10s;
@@ -338,12 +354,8 @@ h3{
     animation: revolve-acw-1 10s cubic-bezier(0,0,1,1) 0s infinite;
 }
 .icon-2{
-    transform: rotate(240deg);
+    transform: rotate(180deg);
     animation: revolve-acw-2 10s cubic-bezier(0,0,1,1) 0s infinite;
-}
-.icon-3{
-    transform: rotate(120deg);
-    animation: revolve-acw-3 10s cubic-bezier(0,0,1,1) 0s infinite;
 }
 
 @media (hover: none){
@@ -372,6 +384,9 @@ h3{
     .project_tile{
         width:40vw;
     }
+    .contact_me_div{
+        font-size: 1.3em;   
+    }
 }
 
 
@@ -381,6 +396,9 @@ h3{
     }
     .project_tile{
         width:80vw;
+    }
+    #contact_links{
+        display: none;
     }
 }
 
@@ -392,16 +410,17 @@ h3{
         font: size 1.6em;
     }
     #contact_me_text{
-        height:40vmin;
-        width:40vmin;
-        line-height: 40vmin;
+        left: 0%;
+        height:100%;
+        width:100%;
+        border-radius: 50%;
+        line-height: 100%;
     }
     .social-icons{
-        height:20vmin;
+        height:10vmin;
     }
     .social-container{
-        height: 85vmin;
-        left: calc(50vw - 20vmin/2);
-        top: calc(50vh - 85vmin/2);
+        height: 10vmin;
+        left: calc(25vmin - 7.5vmin/2);
     }
 }

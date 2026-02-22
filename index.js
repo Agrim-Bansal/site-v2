@@ -1,7 +1,7 @@
 const c = document.getElementById("caret");
 const me = document.getElementById("me");
 const navbar = document.getElementById('navbar')
-const text = ["a software developer ", "a high-schooler ", "a thinker ", "a footballer "];
+const text = ["a thinker", "an IITian ", "a coder ", "a builder "];
 window.i = 0
 window.j = 0
 
@@ -28,7 +28,7 @@ anim = (text) =>{
     }
     window.i += 1; 
 }
-setInterval(anim, 110, s=text);
+setInterval(anim, 125, s=text);
 
 document.getElementById('nav_activator').onclick= ()=>{
     navbar.classList.toggle('active-navbar');
