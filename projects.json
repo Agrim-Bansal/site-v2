@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Paint Right",
+    "description": "An svg-based paint application built with C++ and Qt framework with a focus on performance and clean code practices with memory safety and modularity in mind",
+    "thumbnail": "src/paint-right-preview.png",
+    "github": "https://github.com/Agrim-Bansal/PaintRight"
+  },
+
+  {
+    "name": "Road Fighter FPGA",
+    "description": "An implementation of the classic  Road Fighter on an FPGA using Verilog, showcasing my skills in hardware design and digital logic. Implements pseudo random generators, sprite rendering, VGA interfacing and FSMs.",
+    "thumbnail": "src/road-fighter-preview.jpg",
+    "github": "https://github.com/Agrim-Bansal/COL-215"
+  },
+
+  {
+    "name": "Can you beat sherlock?",
+    "description": "An AI powered detective game where players solve murder mysteries by interrogating realistic suspects and finding discrepancies. Designed on a terminal theme, the webapp gives an enigmatic vibe to the game.",
+    "thumbnail": "src/sherlock-preview.png",
+    "link": "https://can-you-beat-sherlock.vercel.app",
+    "github": "https://github.com/Agrim-Bansal/can-you-beat-sherlock"
+  },
+
+  {
+    "name": "Equity Market Simulator",
+    "description": "An educational tool built to allow people to experiment with stock market dynamics and understand financial concepts in a risk-free environment by trading with paper money. Complete with secure authentication and almost realtime data visualization.",
+    "thumbnail": "src/market-preview.png",
+    "link": "https://stock-simulator-beta.vercel.app/",
+    "github": "https://github.com/Agrim-Bansal/Stock-Simulator"
+  },
+
+  {
+    "name": "Brain F Interpreter",
+    "description": "A visual interpreter for the Brainfuck programming language equipped with a debugger, built into terminal, script as well as a website version.",
+    "thumbnail": "src/brainf-preview.png",
+    "link": "https://projects.agrimbansal.com/BrainEffInterpreter",
+    "github": "https://github.com/Agrim-Bansal/BrainEffInterpreter"
+  },
+
+  {
+    "name": "Capt. Burnbeard",
+    "description": "A fun webapp which generates playful pirate-themed insults powered by Gemini API and built with ReactJS and Tailwind CSS. It provides users with a humorous way to create pirate-inspired insults for entertainment purposes.",
+    "thumbnail": "src/burnbeard-preview.png",
+    "link": "",
+    "github": "https://github.com/Agrim-Bansal/CaptBurnbeard"
+  },
+  
+  {
+    "name": "Artemis",
+    "description": "A futuristic re-imagination of professional photo editing apps integrating AI into the operational workflows capable of running on low compute devices with low latency",
+    "thumbnail": "src/artemis-preview.png"
+  },
+
+  {
+    "name": "Class Schedule",
+    "description": "A website and chrome-extension to keep record of my online classes built with ExpressJS and Airtable database",
+    "thumbnail": "src/class-schedule-preview.jpg",
+    "link": "https://projects.agrimbansal.com/class-schedule",
+    "github": "https://github.com/Agrim-Bansal/class-schedule"
+  }
+]
